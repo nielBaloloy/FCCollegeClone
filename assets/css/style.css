@@ -72,13 +72,23 @@ section {
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, #0a411e, #27854a);
+  background: linear-gradient(-45deg, #185524, #05772d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.svg{
+  min-height: 50vh;
+}
+.section-headings {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #f6f6f6, #c4f9d7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -156,12 +166,12 @@ section {
 /* Feature 1 */
 .feature-1 .wrap-icon {
   margin: 0 auto;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   position: relative;
   margin-bottom: 30px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.179);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -184,6 +194,23 @@ section {
 .feature-1 p {
   color: #b1b1b1;
 }
+.carousel > {
+  height: auto;
+}
+.CardCarousel {
+  z-index: 7;
+  transition: box-shadow 0.3s ease;
+}
+
+.CardCarousel:hover {
+  color:red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can adjust the shadow values as per your preference */
+}
+.OurGraduatesSection{
+  height: 100%;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.81), rgba(1, 42, 23, 0.826)), url('../img/Screenshot\ 2023-12-28\ 224809.png');
+  background-size: cover;
+}
 
 /* Step */
 .step {
@@ -193,7 +220,7 @@ section {
 }
 
 .step .number {
-  background: linear-gradient(-45deg, #1391a5, #274685);
+  background: linear-gradient(-45deg, #13a549, #13590e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -209,18 +236,21 @@ section {
 /* Review */
 .review h3 {
   font-size: 20px;
+  color: #ffffff;
 }
 
 .review p {
   line-height: 1.8;
   font-style: italic;
-  color: #333333;
+  color: #ebebeb;
 }
 
 .review .stars span {
   color: #FF8803;
 }
-
+.review .textCaption{
+  color:white;
+}
 .review .stars .muted {
   color: #ccc;
 }
@@ -229,7 +259,9 @@ section {
   width: 70px;
   margin: 0 auto;
 }
-
+.test{
+  margin-top: -10%;
+}
 /* Testimonial Carousel */
 .testimonials-slider .swiper-pagination {
   margin-top: 20px;
@@ -241,11 +273,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #2d71a1;
+  border: 1px solid hsl(134, 56%, 40%);
 }
 
 .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #2d71a1;
+  background-color: hsl(134, 56%, 40%);
 }
 
 /* Pricing */
@@ -265,7 +297,7 @@ section {
   color: #2d71a1;
 }
 
-.pricing .price-cta {
+.pricing .price-news {
   text-decoration: none;
   position: absolute;
   bottom: 50px;
@@ -274,7 +306,7 @@ section {
   left: 0;
 }
 
-.pricing .price-cta .price {
+.pricing .price-news .price {
   display: block;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -312,7 +344,7 @@ section {
   background: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
   color: #000000;
-  background: linear-gradient(-45deg, #1391a5, #274685);
+  background: linear-gradient(-45deg, #13a549, #13590e);
   color: #fff;
   box-shadow: none;
 }
@@ -330,30 +362,69 @@ section {
   border: 2px solid #2d71a1;
 }
 
-/* CTA Section */
-.cta-section {
-  background: linear-gradient(to right, rgb(39, 70, 133) 0%, rgb(61, 179, 197) 100%);
+/* news Section */
+.news-section {
+  background-color: #ebebeb;
   color: #fff;
 }
 
-.cta-section h2 {
+.news-section h2 {
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
 }
 
+.header_sub{
+  display: flex;
+  padding:.5em;
+  justify-content: end;
+  color:rgb(2, 92, 2);
+  font-weight: 500;
+}
+.seemore a,
+.seemore i{
+  color:rgb(2, 92, 2);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.news1{
+  background:linear-gradient(0deg, rgba(3, 2, 2, 0.459), rgba(9, 22, 16, 0.395)), url('../img/ccje/newscrim.jpg');
+  color: rgb(250, 250, 250);
+  background-size: contain;
+  background-position: center;
+  height: 515px;
+}
+.news2{
+  background:linear-gradient(0deg, rgba(3, 2, 2, 0.459), rgba(9, 22, 16, 0.395)), url('../img/ccje/Screenshot\ 2023-12-14\ 101258.png');
+  color: azure;
+  background-size: cover;
+  background-position: right;
+  height: 250px;
+}
+.news3     {
+  background:linear-gradient(0deg, rgba(3, 2, 2, 0.459), rgba(9, 22, 16, 0.395)), url('../Photos/ccje/Screenshot\ 2023-12-14\ 100644.png');
+  color: azure;
+  background-size: cover;
+  background-position: right;
+  height: 250px;
+}
+
 @media screen and (max-width: 768px) {
-  .cta-section h2 {
+  .news-section h2 {
     font-size: 2rem;
   }
 }
-
-.cta-section .btn {
+.svg{
+  min-height: 50vh;
+}
+.news-section .btn {
   background: #000000;
   color: #fff;
 }
 
-.cta-section .btn i {
+.news-section .btn i {
   margin-right: 5px;
   font-size: 24px;
   line-height: 0;
@@ -774,10 +845,11 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
-
+  
   .navbar ul {
     display: none;
   }
+ 
 }
 
 .navbar-mobile {
@@ -867,19 +939,23 @@ section {
   background-position: right;
   background-size: cover;
   position: relative;
+  height: 800px;
 }
 
 .hero-section .wave {
-  width: 100%;
+  width: 100%;  
+ max-height:43.2%;
   overflow: hidden;
   position: absolute;
   z-index: 1;
   bottom: -150px;
+ 
 }
 
 @media screen and (max-width: 992px) {
   .hero-section .wave {
     bottom: -180px;
+    height:40.2%;
   }
 }
 
@@ -996,6 +1072,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  background-color: #eeeeee;
   padding: 5rem 0 2.5rem 0;
 }
 
@@ -1044,9 +1121,14 @@ section {
 
 .social a:hover {
   color: #fff;
-  background: #2d71a1;
+  background: #0e6e4c;
 }
 
 .social a i {
   line-height: 0;
+}
+@media (max-width: 768px) {
+  .footer  {
+    text-align: center;
+  }
 }
